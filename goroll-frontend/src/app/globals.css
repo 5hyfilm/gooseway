@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: rgb(51, 51, 51);
+  /* เปลี่ยนจาก var(--foreground) เป็นสีเข้มชัดเจน */
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* แก้ไขสีข้อความทั่วไปให้เข้มขึ้น */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div,
+button,
+a,
+label,
+input,
+textarea,
+select {
+  color: inherit;
+}
+
+/* เพิ่มความคมชัดสำหรับข้อความในสีพื้นหลังต่างๆ */
+.text-gray-500 {
+  color: #6b7280 !important;
+  /* เข้มขึ้นจากเดิม */
+}
+
+.text-gray-600 {
+  color: #4b5563 !important;
+  /* เข้มขึ้นจากเดิม */
+}
+
+.text-gray-700 {
+  color: #374151 !important;
+  /* เข้มขึ้นจากเดิม */
+}
+
+/* Add to src/app/globals.css */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-pulse-location {
+  animation: pulse 1s infinite;
+}
+
+/* Hide scrollbars but allow scrolling */
+.scrollbar-hide {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+/* เพิ่มค่า contrast ให้กับข้อความบน background สีอ่อน */
+.bg-gray-50 *,
+.bg-blue-50 *,
+.bg-green-50 *,
+.bg-yellow-50 *,
+.bg-red-50 * {
+  color: inherit;
+}
+
+.bg-blue-600,
+.bg-blue-700,
+button.bg-blue-600,
+button.bg-blue-700,
+[type="button"].bg-blue-600,
+[type="submit"].bg-blue-600,
+[type="reset"].bg-blue-600 {
+  color: white !important;
+}
+
+/* ครอบคลุมกรณีที่อาจมีการใช้ hover class */
+.hover\:bg-blue-600:hover,
+.hover\:bg-blue-700:hover {
+  color: white !important;
+}
+
+/* ให้แน่ใจว่า span และ text ภายในปุ่มเหล่านี้ก็เป็นสีขาวด้วย */
+.bg-blue-600 *,
+.bg-blue-700 *,
+button.bg-blue-600 *,
+button.bg-blue-700 * {
+  color: white !important;
+}

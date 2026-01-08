@@ -1,0 +1,16 @@
+{
+  "edit_profile": "Edit Profile",
+  "save_changes": "Save Changes",
+  "basic_info": "Basic Information",
+  "remove_photo": "Remove Photo",
+  "my_post": "My Posts",
+  "see_all": "See all",
+  "route_lib": "Route Library",
+  "view_all": "View all",
+  "gallery": "Gallery",
+  "camera": "Camera",
+  "confirm_stop_edit": "Confirm Stopping Edit",
+  "confirm_stop_edit_description": "Are you sure you want to stop editing your profile?",
+  "update_profile_success": "Profile updated successfully!",
+  "edit_wheelchair_success": "Wheelchair accessibility settings updated successfully!"
+}

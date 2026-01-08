@@ -1,0 +1,14 @@
+{
+    "written_review": "Written a Review",
+    "user_reviews": "User Reviews",
+    "select_item": "Select Item",
+    "lastest": "Latest",
+    "highest": "Highest Rating",
+    "lowest": "Lowest Rating",
+    "most_liked": "Most Liked",
+    "write_review": "Write a Review",
+    "review": "Review",
+    "here_review": "Here are the reviews from users for this location.",
+    "description_placeholder": "Write your review here...",
+    "accessibility_review": "How satisfied are you with the accessibility of this location?"
+}
